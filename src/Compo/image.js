@@ -1,20 +1,21 @@
 import React, {Component} from 'react';
+
 import Nutty from '../image/Nutty.webp'
 import './image.css'
 
-const image = <img src={Nutty} width= "100" hidden ={true} />
-const button = <button className= "bouton" onClick ={handleclic} >Appuye pour afficher</button>
+const Image = () => {
+  const [etat, setEtat] = React.useState(true)
+  const button = <button className= "bouton" onClick ={handleclic} >Appuye pour afficher</button>
+  const image = <img src={Nutty} width= "100" hidden ={etat} />
 
-function handleclic(){
-  let etat =(image.hidden == true) ? 'false' : 'true'
-  return etat
- }
+  function handleclic(){
+      setEtat(etat => !etat)
+  }
 
-function Image(){
-    return <div className="container">
-      {button}
-      {image}  
-    </div> 
+  return <div className="container">
+    {button}
+    {image}
+  </div> 
 }
 
 export default Image;
