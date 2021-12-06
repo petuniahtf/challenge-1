@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 import Nutty from '../image/Nutty.webp'
 import './image.css'

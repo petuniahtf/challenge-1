@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './Compo/header.js'
 import Formuleaire from './Compo/formulaire';
