@@ -12,7 +12,6 @@ function App() {
       <Formuleaire/>
       <Image/>
       <Surprise/>
-
     </div>
   )
 }

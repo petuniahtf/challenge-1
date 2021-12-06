@@ -1,3 +1,5 @@
-h1{
-    background-color: transparent;
+.home{
+    grid-row-start: 1;
+    grid-column: span 3;
+    background-color: rgb(71, 71, 255);
 }

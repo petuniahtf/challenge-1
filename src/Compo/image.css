@@ -1,23 +1,24 @@
+.container{
+    grid-row-start: 2;
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgb(29, 246, 181);
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    box-shadow: 10px 5px 5px grey;
+}
+
 .bouton{
     box-shadow: 10px 5px 5px grey;
     border-radius: 10%;
     background-color: chartreuse;
     grid-row-start: 1;
     height: 50px;
-    width: 120px;
+    width: auto;
     
-}
-
-.container{
-    height: 250px;
-    width: 200px;
-    border-radius: 10px;
-    background-color: burlywood;
-    display: grid;
-    grid-template-rows: 1fr 2fr;
 }
 
 .image{
     grid-row-start: 2;
-    justify-content: center;
 }
