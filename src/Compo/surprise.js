@@ -5,7 +5,7 @@ import Son from '../image/Happy.mp3'
 
 function Surprise(){
     return <div className="surprise">
-        <img src = {Petunia} width='200px'></img>
+        <img src = {Petunia} width='200px' alt="hohoho"></img>
         <audio src={Son} controls></audio>
     </div>
 }
