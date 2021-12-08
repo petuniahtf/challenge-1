@@ -5,5 +5,15 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 3fr 1fr;
   grid-column-gap: 10px;
-  grid-row-gap: 5px;
+  row-gap: 5px;
+}
+
+@media all and (max-device-width : 480px) 
+{
+ .app{
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+   row-gap: 5px;
+ } 
+
 }

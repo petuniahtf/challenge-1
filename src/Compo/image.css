@@ -22,3 +22,10 @@
 .image{
     grid-row-start: 2;
 }
+
+@media all and (max-device-width : 480px) 
+{
+    .image{
+        grid-row-start: 3;
+    }
+}

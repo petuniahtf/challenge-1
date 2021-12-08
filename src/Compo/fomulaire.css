@@ -9,3 +9,10 @@
 input {
     margin: .4rem;
 }
+
+@media all and (max-device-width : 480px) 
+{
+    .formulaire{
+        grid-row-start: 2;
+    }
+}

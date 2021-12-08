@@ -1,5 +1,12 @@
 .home{
     grid-row-start: 1;
     grid-column: span 3;
-    background-color: rgb(71, 71, 255);
+    background-color: transparent;
+}
+
+@media all and (max-device-width : 480px) 
+{
+    .home{
+        grid-row-start: 1;
+    }
 }
