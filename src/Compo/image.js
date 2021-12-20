@@ -1,7 +1,7 @@
 import React from 'react';
 import './image.css'
 
-const Image = ({url},{text}) => {
+const Image = ({url ,text}) => {
   console.log(url)
   const [etat, setEtat] = React.useState(true)
   const button = <button className= "bouton" onClick ={handleclic} >{text}</button>
