@@ -3,8 +3,7 @@ import { BrowserRouter as Router , Link} from 'react-router-dom'
 
 import './home.css'
 
-function Home({affiche}) {
-    console.log(affiche)
+function Home() {
     const [toggleMenu, setToggleMenu] = React.useState(false)
     const [largeur, setLargeur] = React.useState(window.innerWidth)
     
@@ -35,9 +34,10 @@ function Home({affiche}) {
         <nav >
             {(toggleMenu || largeur > 500) && (
                 <ul className='liste'>
-                <li className='items'><Link to='/formulaire'>formulaire</Link></li>
-                <li className='items'><Link to='/image'>Image</Link></li>
-                <li className='items'><Link to='/surprise'>surprise</Link></li>
+                    <li className='items'><Link to='/'>Home</Link></li>
+                    <li className='items'><Link to='/formulaire'>formulaire</Link></li>
+                    <li className='items'><Link to='/image'>Image</Link></li>
+                    <li className='items'><Link to='/surprise'>surprise</Link></li>
                 </ul>
             )}
             <button className='bouts' onClick={toggleNavSmall}> C'est cablé?</button>
