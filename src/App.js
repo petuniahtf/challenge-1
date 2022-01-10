@@ -16,12 +16,18 @@ function App(){
   }
   const [selectedPersonage, setSelectedPersonage]= React.useState('')
 
+  const handleSurnameChange = (surname) => {
+    console.log(surname)
+    setSurname(surname)
+  }
+  const [surname, setSurname] = React.useState('')
+
   return (
     <div className="App">
       <Home/>
-      <Formuleaire onPersonnageChange = {handlePersonnageChange} />
-      <Image  url={nutty} text='clic ici '/>
-      <Image  url={flyppi} text='appuyer ici' />
+      <Formuleaire onPersonnageChange = {handlePersonnageChange} onSurnameChange ={handleSurnameChange}/>
+      <Image  url={nutty} text={surname}/>
+      <Image  url={flyppi} text={surname}/>
       <Surprise personnage= {selectedPersonage} />
     </div>
   )

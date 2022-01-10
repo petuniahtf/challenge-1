@@ -1,9 +1,10 @@
 import React from 'react';
 import './fomulaire.css'
 
-const Formuleaire = ({onPersonnageChange}) => {
+const Formuleaire = ({onPersonnageChange, onSurnameChange}) => {
 
     const [ personnage, setPersonnage] = React.useState('petunia');
+    const [surname, setSurname] = React.useState('')
 
     function isSelect(event) {
         event.preventDefault()
@@ -14,6 +15,13 @@ const Formuleaire = ({onPersonnageChange}) => {
     const handleChange = event => {
         console.log(event.target.value)
         setPersonnage(event.target.value)
+    }
+
+    const handleSurnameChange = event =>{
+        event.preventDefault()
+        console.log(event.target.value)
+        setSurname(event.target.value)
+        onSurnameChange(surname)
     }
 
 
@@ -34,13 +42,15 @@ const Formuleaire = ({onPersonnageChange}) => {
                 <label>Petunia</label>
             </div>
 
-
-
             <div className="child3">
                 <button type="submit"  >Tadada</button>
             </div>
+            
         </fieldset>
+
+        <input type='text' placeholder='entrez votre surnom' onChange={handleSurnameChange} ></input>
     </form>
+
     )
 }
 
