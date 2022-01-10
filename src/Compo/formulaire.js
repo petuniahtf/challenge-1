@@ -3,7 +3,7 @@ import './fomulaire.css'
 
 const Formuleaire = ({onPersonnageChange, onSurnameChange}) => {
 
-    const [ personnage, setPersonnage] = React.useState('petunia');
+    const [ personnage, setPersonnage] = React.useState('');
     const [surname, setSurname] = React.useState('')
 
     function isSelect(event) {
