@@ -5,9 +5,7 @@ import Son from '../image/Happy.mp3'
 
 const Surprise = ({personnage}) =>{
   
-    console.log(`surprise ${personnage}`)
-
-    
+    //console.log(`surprise ${personnage}`)
 
     if(personnage === 'petunia'){
       return <div >

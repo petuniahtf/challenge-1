@@ -13,18 +13,16 @@ const Formuleaire = ({onPersonnageChange, onSurnameChange}) => {
     }
 
     const handleChange = event => {
-        console.log(event.target.value)
+        //console.log(event.target.value)
         setPersonnage(event.target.value)
     }
 
     const handleSurnameChange = event =>{
         event.preventDefault()
-        console.log(event.target.value)
+        //console.log(event.target.value)
         setSurname(event.target.value)
         onSurnameChange(surname)
     }
-
-
 
     return (<form onSubmit={isSelect} className="formulaire">
         <fieldset>
