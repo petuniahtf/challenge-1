@@ -1,10 +1,11 @@
 import React from 'react';
 import './fomulaire.css'
 
-const Formuleaire = ({onPersonnageChange, onSurnameChange}) => {
+const Formuleaire = ({onPersonnageChange, onSurnameChange, onCastorChange}) => {
 
     const [ personnage, setPersonnage] = React.useState('');
     const [surname, setSurname] = React.useState('')
+    const [castor, setCastor] = React.useState('')
 
     function isSelect(event) {
         event.preventDefault()
@@ -24,7 +25,14 @@ const Formuleaire = ({onPersonnageChange, onSurnameChange}) => {
         onSurnameChange(surname)
     }
 
-    return (<form onSubmit={isSelect} className="formulaire">
+    // const handleCastorChange = event => {
+    //     event.preventDefault()
+    //     setCastor(event.target.value)
+    //     onCastorChange(castor)
+    // }
+
+    return (<>
+        <form onSubmit={isSelect} className="formulaire">
         <fieldset>
 
             <legend> Quel Happy tree friend vous préférez?</legend>
@@ -47,8 +55,9 @@ const Formuleaire = ({onPersonnageChange, onSurnameChange}) => {
         </fieldset>
 
         <input type='text' placeholder='entrez votre surnom' onChange={handleSurnameChange} ></input>
+  
     </form>
-
+    </>
     )
 }
 

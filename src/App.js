@@ -4,6 +4,7 @@ import Home from './Compo/home.js'
 import Formuleaire from './Compo/formulaire';
 import Image from './Compo/image';
 import Surprise from './Compo/surprise'
+import Carte from './Compo/carte';
 
 
 function App(){
@@ -22,13 +23,22 @@ function App(){
   }
   const [surname, setSurname] = React.useState('')
 
+  // const handleCastorChange = (castor) => {
+  //   console.log(`tu est un castor : ${castor}`)
+  //   setSelectedCastor(castor)
+  // }
+  //const [selectedCastor, setSelectedCastor] = React.useState('')
+
   return (
     <div className="App">
       <Home/>
-      <Formuleaire onPersonnageChange = {handlePersonnageChange} onSurnameChange ={handleSurnameChange}/>
+      <Formuleaire onPersonnageChange = {handlePersonnageChange} onSurnameChange ={handleSurnameChange} />
       <Image  url={nutty} text={surname}/>
       <Image  url={flyppi} text={surname}/>
       <Surprise personnage= {selectedPersonage} />
+      {/*<Carte castor={selectedCastor}/>
+      function pour formuleraire = onCastorChange={handleCastorChange}
+      */}
     </div>
   )
 }
