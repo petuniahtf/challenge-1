@@ -39,6 +39,7 @@ function App(){
       {/*<Carte castor={selectedCastor}/>
       function pour formuleraire = onCastorChange={handleCastorChange}
       */}
+      <Carte/>
     </div>
   )
 }

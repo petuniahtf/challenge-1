@@ -5,7 +5,7 @@ const Formuleaire = ({onPersonnageChange, onSurnameChange, onCastorChange}) => {
 
     const [ personnage, setPersonnage] = React.useState('');
     const [surname, setSurname] = React.useState('')
-    const [castor, setCastor] = React.useState('')
+    //const [castor, setCastor] = React.useState('')
 
     function isSelect(event) {
         event.preventDefault()
