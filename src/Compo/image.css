@@ -23,6 +23,14 @@
     grid-row-start: 2;
 }
 
+@media screen and (max-device-width : 1000px)
+{
+    .image{
+        grid-row-start: 2;
+        display: flex;
+    }
+}
+
 @media all and (max-device-width : 480px) 
 {
     .image{

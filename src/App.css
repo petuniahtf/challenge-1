@@ -3,18 +3,32 @@
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 3fr 1fr;
-  grid-column-gap: 10px;
+  grid-template-rows: 1fr 3fr 3fr 1fr;
+  
   row-gap: 5px;
 }
+@media screen and (max-device-width : 1000px) 
+{
+  .App{
+    margin:5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 3fr 1fr;
+    grid-column-gap: 10px;
+    row-gap: 5px;
 
-@media screen and (max-device-width : 500px) 
+  }
+}
+
+@media screen and (max-device-width : 650px) 
 {
  .App{
    display: flex;
    flex-direction: column;
+   justify-content: center;
    margin:0;
-  padding: 0;
+   padding: 0;
  } 
 
 }

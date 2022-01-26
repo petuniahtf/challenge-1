@@ -36,8 +36,8 @@ const Carte = () =>{
         e.preventDefault()
         setState(e.target.value)
     }
-    return(<>
-    <label>Choisi ta catégori</label>
+    return(<section className="carte1">
+    <label>Choisi ta catégori : </label> <br/>
     <select value={state} onChange={handleStateChange}>
         <option value='family'>family</option>
         <option value='office'>office</option>
@@ -48,7 +48,7 @@ const Carte = () =>{
     <div>
         {excuse}   
     </div>
-    </>
+    </section>
     )
 
 }

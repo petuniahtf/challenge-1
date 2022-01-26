@@ -1,0 +1,15 @@
+.carte1{
+    grid-row-start: 2;
+    height: 250px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    box-shadow: 10px 5px 5px grey;
+}
+
+@media screen and (max-device-width : 1000px)
+{
+    .carte1 {
+        grid-row-start: 4;
+    }
+}
